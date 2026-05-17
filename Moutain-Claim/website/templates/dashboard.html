@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css')}}" />
+
+<main class="dashboard-frame" data-el="dashboard-frame">
+  <div class="dashboard-container">
+    <section class="dashboard-main">
+      <header class="welcome-header">
+        <p class="welcome-text">Welcome back, Register name</p>
+        <h1 class="main-title">Revamp Your Routine</h1>
+      </header>
+
+      <section class="process-section">
+        <div class="icon-circle">
+          <img src="{{ url_for('static', filename='icon/processicon.png') }}" alt="Process icon" class="icon">
+        </div>
+        <h2 class="section-title">Process</h2>
+      </section>
+
+      <div class="metrics-grid">
+        <section class="metric-card">
+          <div class="icon-circle">
+            <img src="{{ url_for('static', filename='icon/temperature.png') }}" alt="Temperature icon" class="icon">
+          </div>
+          <h2 class="section-title">Temperature</h2>
+        </section>
+
+        <section class="metric-card">
+          <div class="icon-circle">
+            <img src="{{ url_for('static', filename='icon/heartrate.png') }}" alt="Heart Rate icon" class="icon">
+          </div>
+          <h2 class="section-title">Heart Rate</h2>
+        </section>
+      </div>
+    </section>
+
+    <section class="location-section">
+      <div class="icon-circle">
+        <img src="{{ url_for('static', filename='icon/locationicon.png') }}" alt="Location icon" class="icon">
+      </div>
+      <h2 class="section-title">Location</h2>
+    </section>
+  </div>
+</main>
